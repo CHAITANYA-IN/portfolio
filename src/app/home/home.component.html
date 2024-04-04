@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        <!--About Me-->
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>About Me</h2>
+                <img src="../../assets/images/profile-picture.png" class="img-fluid" alt="Profile Picture" width="256"
+                    height="256" class="rounded-circle" />
+                <p class="text-justify">
+                    Hi, I am Chaitanya Bharat Shinge from Rasayani, Maharashtra. I'm currently pursing M.S. by Research
+                    &#64; IIT Bombay in Computing Systems stream as a RAP student. I'm working with Professor Varsha
+                    Apte on broad problem of Access Control layer in Complex Web Applications which has its own
+                    interesting + challenging objectives. I'm a Computer Engineering graduate from College of
+                    Engineering Pune. Broadly speaking, my areas of interest are Operating Systems and Computer
+                    Architecture.
+                    I opted for M.S.(R) to understand the mindsets of research individuals. And obviously as a Master
+                    student, to contribute pushing the current state-of-the-art. I am here to grow myself in a way I had
+                    never thought of. There is lot to gain here &#64; IIT Bombay. I feel great enjoying my golden years
+                    here.
+                    Apart from academics, I do dance and recite songs in my leisure time. I love reading history and
+                    mythology. I feel it is wise to learn from other's experiences and best way for this is reading
+                    their history or if possible listening them. I'm not much talkative but I'm very helpful and would
+                    like to hear people, their problems, views and opinions. Please feel free if you want to talk with
+                    me or if you need any help.
+                    Through this platform, I want to thank my family, all my teachers, coaches, seniors, friends and
+                    relatives who have supported me to reach till here. Hope you all would be reading this. Keep
+                    supporting me!
+                </p>
+            </div>
+        </div>
+        <!--Featured Project-->
+        <div class="col-lg shadow border m-1">
+            <div class="text-center">
+                <h2>Featured Project</h2>
+                <h4>{{featuredProject.name}}</h4>
+            </div>
+            <carousel>
+                <div *ngFor="let picture of featuredProject.pictures">
+                    <slide>
+                        <img src={{picture}} alt="Slide" style="display: block; width: 100%;" />
+                    </slide>
+                </div>
+            </carousel>
+            <p class="mt-2">{{featuredProject.summary}}</p>
+            <p>Visit the Portfolio section to learn more!</p>
+        </div>
+    </div>
+</div>
