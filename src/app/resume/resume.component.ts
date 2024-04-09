@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, Renderer2 } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { AccordionModule } from 'ngx-bootstrap/accordion';
@@ -6,12 +7,19 @@ import { AccordionModule } from 'ngx-bootstrap/accordion';
   selector: 'app-resume',
   standalone: true,
   imports: [
-    AccordionModule
+    CommonModule,
+    AccordionModule,
   ],
   templateUrl: './resume.component.html',
   styleUrl: './resume.component.css'
 })
 export class ResumeComponent {
+
+  isWorkExperienceSectionOpen: boolean = false;
+  isEducationSectionOpen: boolean = false;
+  isCertificationsSectionOpen: boolean = false;
+  isSkillsSectionOpen: boolean = false;
+
   constructor(private titleService: Title, private renderer: Renderer2) {
     this.titleService.setTitle('Resume | Chaitanya Bharat Shinge');
   }

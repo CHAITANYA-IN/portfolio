@@ -9,6 +9,7 @@ import { Title } from '@angular/platform-browser';
   styleUrl: './contact.component.css'
 })
 export class ContactComponent {
+
   constructor(private titleService: Title) {
     this.titleService.setTitle('Contact | Chaitanya Bharat Shinge');
   }

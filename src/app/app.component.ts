@@ -4,6 +4,7 @@ import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,7 @@ import { CommonModule } from '@angular/common';
   imports: [
     CommonModule,
     RouterOutlet, RouterLink, RouterLinkActive,
-    HeaderComponent, NavComponent, HomeComponent
+    HeaderComponent, NavComponent, HomeComponent, FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

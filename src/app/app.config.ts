@@ -7,5 +7,5 @@ import { BsModalService } from 'ngx-bootstrap/modal';
 import { provideAnimations } from '@angular/platform-browser/animations';
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), provideClientHydration(), BsModalService, provideAnimations()]
+  providers: [provideRouter(routes), provideClientHydration(), BsModalService, provideAnimations(),]
 };

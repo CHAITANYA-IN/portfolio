@@ -3,7 +3,7 @@
     <button class="btn-close" (click)="bsModalRef.hide()"></button>
 </div>
 <div class="modal-body">
-    <carousel>
+    <carousel *ngIf="project.pictures.length != 0">
         <div *ngFor="let picture of project.pictures">
             <slide>
                 <img src={{picture}} alt="Slide" style="display: block; width: 100%;" />
