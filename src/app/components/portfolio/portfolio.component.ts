@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ProjectCardComponent } from '../project-card/project-card.component';
 import { CommonModule } from '@angular/common';
-import { Project } from '../_models/project';
-import { ProjectsService } from '../_services/projects.service';
+import { Project } from '../../models/project';
+import { ProjectsService } from '../../services/projects.service';
 import { FormsModule } from '@angular/forms';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
-import { Tag } from '../_models/tag';
+import { Tag } from '../../models/tag';
 
 
 @Component({

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Project } from '../_models/project';
+import { Project } from '../../models/project';
 import { BsModalRef } from 'ngx-bootstrap/modal';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CommonModule } from '@angular/common';

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from './header/header.component';
-import { NavComponent } from './nav/nav.component';
-import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './components/header/header.component';
+import { NavComponent } from './components/nav/nav.component';
+import { HomeComponent } from './components/home/home.component';
 import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',

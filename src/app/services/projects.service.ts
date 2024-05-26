@@ -1,6 +1,6 @@
 import { Injectable, Type } from '@angular/core';
-import { Project } from '../_models/project';
-import { Tag } from '../_models/tag';
+import { Project } from '../models/project';
+import { Tag } from '../models/tag';
 
 
 @Injectable({
